@@ -24,11 +24,11 @@ Password: 123
 
 # Команды для rbenv
 
-`rbenv versions` - список установленных версий ruby
-`rbenv version` - отображает активную версию ruby
-`rbenv install -l` - список всех доступных версий ruby
-`rbenv install 2.4.0` - установка ruby
-`rbenv uninstall 2.4.0` - удаление ruby
-`rbenv local 2.4.0` - подключение версии ruby в обход global версии ruby
-`rbenv local --unset` - отключение локальной версии ruby
-`rbenv global 2.4.0` - установка версии ruby в качестве основной версии
+* `rbenv versions` - список установленных версий ruby
+* `rbenv version` - отображает активную версию ruby
+* `rbenv install -l` - список всех доступных версий ruby
+* `rbenv install 2.4.0` - установка ruby
+* `rbenv uninstall 2.4.0` - удаление ruby
+* `rbenv local 2.4.0` - подключение версии ruby в обход global версии ruby
+* `rbenv local --unset` - отключение локальной версии ruby
+* `rbenv global 2.4.0` - установка версии ruby в качестве основной версии
