@@ -5,7 +5,7 @@
 
 # Развертывание виртуальной машины
 
-1. `git clone git@gitfo2.naumen.ru:root/virtual_cp.git`
+1. `git clone git@github.com:arty88/vagrant_rails.git`
 2. Перейти в папку с проектом
 3. `vagrant up && notify-send --icon=$PWD/vagrant.svg 'Vagrant up complete'`
 4. Создать папку `files` (`mkdir files`)
