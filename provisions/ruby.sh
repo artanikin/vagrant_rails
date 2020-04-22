@@ -31,3 +31,4 @@ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
 echo 'Install Gems...'
 rbenv exec gem install bundler -v '1.17.3'
+rbenv exec gem install foreman
