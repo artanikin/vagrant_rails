@@ -1,7 +1,9 @@
 # Установка необходимых компонентов
 1. Установить VirtualBox `https://www.virtualbox.org/wiki/Downloads`
 2. Установить Vagrant `https://www.vagrantup.com/downloads.html`
-3. Установить плагин к Vagrant из репозитория `https://github.com/dotless-de/vagrant-vbguest` командой `vagrant plugin install vagrant-vbguest`
+3. Установить плагины к Vagrant из репозитория `https://github.com/dotless-de/vagrant-vbguest`
+  * `vagrant plugin install vagrant-vbguest`
+  * `vagrant plugin install vagrant-disksize`
 
 # Развертывание виртуальной машины
 

@@ -4,31 +4,30 @@ echo 'Ruby configuration...'
 
 echo 'Install Rbenv'
 
-test -d /home/ubuntu/.rbenv || \
+test -d /home/vagrant/.rbenv || \
   git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 echo 'Install ruby-build (plugin for Rbenv)'
-test -d /home/ubuntu/.rbenv/plugins/ruby-build || \
+test -d /home/vagrant/.rbenv/plugins/ruby-build || \
   git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-echo 'export RBENV_ROOT=/home/ubuntu/.rbenv' >> ~/.bashrc
+echo 'export RBENV_ROOT=/home/vagrant/.rbenv' >> ~/.bashrc
 echo 'export PATH="${RBENV_ROOT}/bin:$PATH"' >> ~/.bashrc
 echo 'export PATH="${RBENV_ROOT}/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+echo 'alias files="cd /vagrant/files"' >> ~/.bashrc
 
-export RBENV_ROOT=/home/ubuntu/.rbenv
+export RBENV_ROOT=/home/vagrant/.rbenv
 export PATH=${RBENV_ROOT}/bin:$PATH
 
 eval "$(rbenv init)"
 
-echo 'Install ruby 2.4.0'
-rbenv versions | grep 2.4.0 ||
-  rbenv install 2.4.0 --verbose
+echo 'Install ruby 2.4.10'
+rbenv versions | grep 2.4.10 ||
+  rbenv install 2.4.10 --verbose
 
-rbenv global 2.4.0
+rbenv global 2.4.10
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
-
 echo 'Install Gems...'
-rbenv exec gem install bundler
-rbenv exec gem install rails
+rbenv exec gem install bundler -v '1.17.3'
