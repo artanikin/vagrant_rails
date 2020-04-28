@@ -1,3 +1,8 @@
+- [Установка необходимых компонентов](#установка-необходимых-компонентов)
+- [Развертывание виртуальной машины](#развертывание-виртуальной-машины)
+- [Настройки для подключения к БД с основной машины](#настройки-для-подключения-к-бд)
+- [Команды для rbenv](#команды-для-rbenv)
+
 # Установка необходимых компонентов
 1. Установить VirtualBox `https://www.virtualbox.org/wiki/Downloads`
 2. Установить Vagrant `https://www.vagrantup.com/downloads.html`
@@ -22,7 +27,7 @@ Host: localhost
 Port: 15432
 Initial Database: postgres
 User Name: postgres
-Password: 123
+Password: postgres
 
 # Команды для rbenv
 
