@@ -23,11 +23,11 @@
 
 # Настройки для подключения к БД
 
-Host: localhost
-Port: 15432
-Initial Database: postgres
-User Name: postgres
-Password: postgres
+  * Host: localhost
+  * Port: 15432
+  * Initial Database: postgres
+  * User Name: postgres
+  * Password: postgres
 
 # Команды для rbenv
 
